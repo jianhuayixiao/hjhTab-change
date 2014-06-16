@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>切换</title>
+    <style type="text/css">
+        body,ul,p{ margin: 0; }
+        ul{ padding: 0; }
+        li{ list-style: none outside; }
+        .bbm-tab{ padding: 20px 0 0 55px; height: 290px; }
+        .bbm-tab .tab-c{ position: relative; }
+        .bbm-tab .tab-c .ul-w{  overflow: hidden; position: relative; }
+        .bbm-tab ul{ overflow: hidden; zoom: 1; position: absolute; top: 0; left: 0;  }
+        .bbm-tab ul li{ display: none; width: 100%; height: 100%; }
+        .bbm-tab ul li.cur{ display: block; }
+        .bbm-tab ul li { width: 200px; float: left; margin-right: 20px; display: inline; }
+        .bbm-tab ul li img{ width: 200px; border: none; }
+        .bbm-tab ul li p.t1{ font: 14px/18px "Microsoft YaHei"; color: #707070; }
+        .bbm-tab ul li p.t2{ font: 16px/20px "Microsoft YaHei"; color: #cc0000; margin-top: 5px; }
+        .bbm-tab ul li p.t2 i{ font: 12px/20px "Microsoft YaHei"; }
+        .bbm-tab .tab-c a.l,.bbm-tab .tab-c a.r{ display: block; position: absolute; z-index: 100; width: 32px; height: 32px; top: 50%; margin-top: -16px; cursor: pointer; }
+        .bbm-tab .tab-c a.l{ left: -45px; background: url("tabImg/le-1.jpg") no-repeat; }
+        .bbm-tab .tab-c a.l:hover{ background: url("tabImg/le.jpg") no-repeat; }
+        .bbm-tab .tab-c a.r{ right: -35px; background: url("tabImg/ri-1.jpg") no-repeat; }
+        .bbm-tab .tab-c a.r:hover{ background: url("tabImg/ri.jpg") no-repeat; }
+
+    </style>
+</head>
+<body>
+<div class="bbm-tab">
+<div class="tab-c">
+    <div class="ul-w">
+        <ul>
+            <li>
+                <a href=""><img src="tabImg/test1.jpg" width="214" height="215" /></a>
+                <p class="t1">三星 Galaxy S5 G9008V 4G手TD-LTE/TD-SCDMA/GSM1</p>
+                <p class="t2"><i>￥</i>4388.00</p>
+            </li>
+            <li>
+                <a href=""><img src="tabImg/test1.jpg" width="214" height="215" /></a>
+                <p class="t1">三星 Galaxy S5 G9008V 4G手TD-LTE/TD-SCDMA/GSM2</p>
+                <p class="t2"><i>￥</i>4388.00</p>
+            </li>
+            <li>
+                <a href=""><img src="tabImg/test1.jpg" width="214" height="215" /></a>
+                <p class="t1">三星 Galaxy S5 G9008V 4G手TD-LTE/TD-SCDMA/GSM3</p>
+                <p class="t2"><i>￥</i>4388.00</p>
+            </li>
+            <li>
+                <a href=""><img src="tabImg/test1.jpg" width="214" height="215" /></a>
+                <p class="t1">三星 Galaxy S5 G9008V 4G手TD-LTE/TD-SCDMA/GSM4</p>
+                <p class="t2"><i>￥</i>4388.00</p>
+            </li>
+            <li>
+                <a href=""><img src="tabImg/test1.jpg" width="214" height="215" /></a>
+                <p class="t1">三星 Galaxy S5 G9008V 4G手TD-LTE/TD-SCDMA/GSM5</p>
+                <p class="t2"><i>￥</i>4388.00</p>
+            </li>
+            <li>
+                <a href=""><img src="tabImg/test1.jpg" width="214" height="215" /></a>
+                <p class="t1">三星 Galaxy S5 G9008V 4G手TD-LTE/TD-SCDMA/GSM6</p>
+                <p class="t2"><i>￥</i>4388.00</p>
+            </li>
+        </ul>
+    </div>
+    <a class="l" href=""></a>
+    <a class="r" href=""></a>
+</div>
+</div>
+    <script type="text/javascript" src="jquery 1.9.0.js"></script>
+    <script type="text/javascript" src="hjhTab-2.0.js"></script>
+    <script type="text/javascript">
+
+    $(function(){
+
+
+        $(".bbm-tab .tab-c").hjhTab({
+            width: 1100,
+            height: 290,
+            scrollWidth: 220
+        });
+
+    });
+
+    </script>
+</body>
+</html>
